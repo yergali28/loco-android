@@ -32,7 +32,8 @@ class LocoTask extends DefaultTask {
                 if (project.Loco.placeholderPattern != null) {
                     text = text.replaceAll(project.Loco.placeholderPattern, "%s")
                 }
-
+                
+                // This is true checkking isLocaleDefault?
                 if (lang == project.Loco.defLang) {
                     internalFile.write(text)
                 } else {
